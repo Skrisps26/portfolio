@@ -1,0 +1,149 @@
+.heading {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--foreground);
+    text-transform: uppercase;
+    border-bottom: 4px solid var(--foreground);
+    padding-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    border: 2px solid black;
+    background: white;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-bottom: 2px solid black;
+    min-height: 250px;
+    transition: all 0.2s;
+}
+
+.card:last-child {
+    border-bottom: none;
+}
+
+.card:hover {
+    background: var(--foreground);
+    color: var(--background);
+}
+
+.card:hover .meta {
+    background: var(--foreground);
+    color: var(--background);
+    border-right-color: var(--background);
+}
+
+.card:hover .title {
+    color: var(--background);
+}
+
+.card:hover .text {
+    color: var(--background);
+}
+
+.card:hover .tag {
+    border-color: var(--background);
+    color: var(--background);
+}
+
+/* Left Column: Meta */
+.meta {
+    padding: 2rem;
+    border-right: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-geist-mono);
+}
+
+.year {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.id {
+    font-size: 3rem;
+    font-weight: 900;
+    opacity: 0.2;
+}
+
+/* Right Column: Content */
+.content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.tags {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.tag {
+    font-family: var(--font-geist-mono);
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: var(--font-geist-mono);
+}
+
+.list li {
+    margin-bottom: 0.5rem;
+}
+
+.list li::before {
+    content: '> ';
+    font-weight: 700;
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr;
+    }
+
+    .meta {
+        border-right: none;
+        border-bottom: 2px solid black;
+        flex-direction: row;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .id {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+}

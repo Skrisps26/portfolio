@@ -1,0 +1,149 @@
+.hero {
+    min-height: 90vh;
+    /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+    /* Space for marquee */
+    overflow: hidden;
+}
+
+.titleContainer {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2rem;
+}
+
+.greeting {
+    font-family: var(--font-geist-mono);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--accent);
+    color: white;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px 0px black;
+    transform: rotate(-2deg);
+}
+
+.title {
+    font-size: clamp(4rem, 15vw, 12rem);
+    line-height: 0.9;
+    /* Relaxed from 0.8 */
+    margin: 0;
+    color: var(--foreground);
+    text-shadow: 6px 6px 0px var(--border-color);
+    /* Hard shadow text */
+    word-break: break-word;
+}
+
+.titleRow {
+    display: block;
+}
+
+.highlight {
+    color: var(--background);
+    /* Invert */
+    background: var(--foreground);
+    padding: 0 1rem;
+}
+
+.descriptionBox {
+    margin-top: 2rem;
+    border: 2px solid black;
+    padding: 2.5rem;
+    max-width: 650px;
+    background: white;
+    box-shadow: 8px 8px 0px 0px black;
+    position: relative;
+    z-index: 20;
+    /* Higher than marquee */
+}
+
+.descriptionBox::before {
+    content: 'Manifesto.txt';
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    background: white;
+    padding: 0 0.5rem;
+    border: 2px solid black;
+    font-family: var(--font-geist-mono);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.description {
+    font-size: 1.15rem;
+    margin-bottom: 2.5rem;
+    color: var(--foreground);
+    font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* Decorative Marquee Line */
+/* Decorative Marquee Line */
+.marqueeLine {
+    position: absolute;
+    bottom: 5vh;
+    left: -10vw;
+    width: 120vw;
+    background: var(--accent);
+    color: white;
+    padding: 0.75rem 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(2deg);
+    white-space: nowrap;
+    z-index: 10;
+    /* Lower than descriptionBox */
+    font-family: var(--font-geist-mono);
+    font-weight: 700;
+    font-size: 1.5rem;
+    overflow: hidden;
+    pointer-events: none;
+    /* Non-blocking */
+    display: flex;
+}
+
+.marqueeLine span {
+    display: inline-block;
+    padding-right: 2rem;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 4.5rem;
+    }
+
+    .descriptionBox {
+        margin-top: 1rem;
+        padding: 1.5rem;
+        box-shadow: 4px 4px 0px 0px black;
+    }
+
+    .marqueeLine {
+        bottom: 2rem;
+    }
+}

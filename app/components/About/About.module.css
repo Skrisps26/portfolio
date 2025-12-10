@@ -1,0 +1,35 @@
+.about {
+    background-color: var(--background);
+    /* Subtle pattern or border to distinguish sections */
+    border-bottom: 1px solid var(--border);
+}
+
+.heading {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--foreground);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+.text {
+    max-width: 800px;
+    font-size: 1.125rem;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.text p {
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .content {
+        /* If we add an image later, we can change this to 2 columns */
+        grid-template-columns: 1fr;
+    }
+}
