@@ -1,32 +1,6 @@
-"use client";
-
-import { useState } from 'react';
 import styles from './Contact.module.css';
 
 export default function Contact() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: ''
-    });
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        const { name, email, message } = formData;
-        const subject = `Portfolio Contact from ${name}`;
-        const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
-
-        window.location.href = `mailto:saikris.dev@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    };
-
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        const { name, value } = e.target;
-        setFormData(prev => ({
-            ...prev,
-            [name]: value
-        }));
-    };
-
     return (
         <section id="contact" className={`section ${styles.contact}`}>
             <div className="container">
@@ -42,15 +16,17 @@ export default function Contact() {
                             <a href="https://github.com/Skrisps26" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</a>
                         </div>
                     </div>
-                    <form className={styles.form} onSubmit={handleSubmit}>
+                    <form
+                        className={styles.form}
+                        action="https://formspree.io/f/xldqpavo"
+                        method="POST"
+                    >
                         <div className={styles.group}>
                             <input
                                 type="text"
                                 name="name"
                                 placeholder="Name"
                                 className={styles.input}
-                                value={formData.name}
-                                onChange={handleChange}
                                 required
                             />
                         </div>
@@ -60,8 +36,6 @@ export default function Contact() {
                                 name="email"
                                 placeholder="Email"
                                 className={styles.input}
-                                value={formData.email}
-                                onChange={handleChange}
                                 required
                             />
                         </div>
@@ -71,8 +45,6 @@ export default function Contact() {
                                 placeholder="Message"
                                 rows={5}
                                 className={styles.textarea}
-                                value={formData.message}
-                                onChange={handleChange}
                                 required
                             ></textarea>
                         </div>
