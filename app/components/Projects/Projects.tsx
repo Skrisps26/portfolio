@@ -30,6 +30,36 @@ const projects = [
             "Geospatial Visulization."
         ],
         year: "2025"
+    },
+    {
+        id: "04",
+        title: "Neural Global Illumination Engine",
+        tech: ["PyTorch", "MLP", "Ray Tracing", "CUDA"],
+        points: [
+            "Reframed Global Illumination as a regression task — MLP predicts radiance instead of ray-tracing.",
+            "Brought per-frame compute from 26ms to 11ms with +4.1dB PSNR improvement. 60+ FPS with dynamic lighting."
+        ],
+        year: "2025"
+    },
+    {
+        id: "05",
+        title: "PowerBench-Consumer",
+        tech: ["PyTorch", "TRL", "GRPO", "LLaMA"],
+        points: [
+            "Benchmarked LLM inference and GRPO training on RTX 2050 (4GB VRAM), extending DREAM:Lab's Jetson Orin AGX methodology.",
+            "Key finding: INT8 inference is ~3x slower than FP16 on consumer GPUs — quantization gains are not portable across architectures."
+        ],
+        year: "2025"
+    },
+    {
+        id: "06",
+        title: "NEXUS — Neural Embedding Search",
+        tech: ["Python", "HNSW", "SimHash", "FastAPI"],
+        points: [
+            "Semantic search with soft cluster assignments, entropy-adaptive cache thresholds, and two-level caching.",
+            "In-process HNSW for sub-linear lookup with full research-style write-up on trade-offs and failure modes."
+        ],
+        year: "2025"
     }
 ];
 
