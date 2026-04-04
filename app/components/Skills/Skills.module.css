@@ -1,7 +1,5 @@
 .skills {
-    background: var(--accent-light);
-    /* Full width background requires breaking out of container if we apply it to section directly */
-    /* Re-using .section class which has padding */
+    /* Section background uses the default; visual distinction via card borders */
 }
 
 .heading {
