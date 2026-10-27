@@ -82,14 +82,53 @@
 .header {
     margin-bottom: 1.5rem;
 }
+.titleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
 .title {
-    font-size: 2.5rem;
-    line-height: 1;
+    font-size: 2.2rem;
+    line-height: 1.1;
     margin: 0;
     text-transform: uppercase;
 }
 
+.linkButton {
+    font-family: var(--font-geist-mono);
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.35rem 0.8rem;
+    background: black;
+    color: white;
+    border: 2px solid black;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: all 0.15s ease;
+}
+
+.linkButton:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.card:hover .linkButton {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+.card:hover .linkButton:hover {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
 .tags {
     margin-top: 1rem;
     display: flex;

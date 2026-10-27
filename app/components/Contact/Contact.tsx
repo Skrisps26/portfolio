@@ -8,12 +8,13 @@ export default function Contact() {
                 <div className={styles.layout}>
                     <div className={styles.info}>
                         <p className={styles.text}>
-                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                            Available for a 6-month Winter/Spring Internship / Co-op starting January 2027 (Pre-placement leading to New Grad 2027). Open to software engineering, backend systems, and AI/ML infrastructure roles.
                         </p>
                         <div className={styles.links}>
                             <a href="mailto:saikris.dev@gmail.com" className={styles.link}>Email</a>
-                            <a href="https://linkedin.com/in/Saik26" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
-                            <a href="https://github.com/Skrisps26" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</a>
+                            <a href="https://linkedin.com/in/saik26" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
+                            <a href="https://github.com/skrisps26" target="_blank" rel="noopener noreferrer" className={styles.link}>GitHub</a>
+                            <a href="/Sai_Krishna_Resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.link}>Resume_PDF</a>
                         </div>
                     </div>
                     <form

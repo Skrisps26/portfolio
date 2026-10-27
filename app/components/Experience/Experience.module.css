@@ -38,6 +38,13 @@
     font-size: 1rem;
 }
 
+.location {
+    font-family: var(--font-geist-mono);
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 0.4rem;
+}
+
 /* Right Column */
 .content {
     padding: 2rem;

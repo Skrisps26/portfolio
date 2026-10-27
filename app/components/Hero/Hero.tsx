@@ -14,20 +14,21 @@ export default function Hero() {
 
                 <div className={styles.descriptionBox}>
                     <p className={styles.description}>
-                        A COMPUTER SCIENCE ENGINEER OBSESSED WITH BUILDING SCALABLE SYSTEMS AND BREAKING DESIGN NORMS.
+                        CS UNDERGRADUATE AT VIT CHENNAI BUILDING RELIABLE AI AND BACKEND SYSTEMS — FROM GPU-CONSTRAINED LLM INFERENCE TO HIGH-THROUGHPUT AUTOMATION.
                     </p>
                     <div className={styles.actions}>
                         <a href="#projects" className="btn btn-primary">VIEW_PROJECTS</a>
+                        <a href="/Sai_Krishna_Resume.pdf" target="_blank" rel="noopener noreferrer" className="btn">DOWNLOAD_CV</a>
                         <a href="#contact" className="btn">CONTACT_ME</a>
                     </div>
                 </div>
             </div>
 
             <div className={styles.marqueeLine}>
-                <span>/// FULL STACK DEVELOPER /// AI ENGINEER /// SYSTEM ARCHITECT /// CREATIVE CODER /// </span>
-                <span>/// FULL STACK DEVELOPER /// AI ENGINEER /// SYSTEM ARCHITECT /// CREATIVE CODER /// </span>
-                <span>/// FULL STACK DEVELOPER /// AI ENGINEER /// SYSTEM ARCHITECT /// CREATIVE CODER /// </span>
-                <span>/// FULL STACK DEVELOPER /// AI ENGINEER /// SYSTEM ARCHITECT /// CREATIVE CODER /// </span>
+                <span>/// AI/ML SYSTEMS /// BACKEND ARCHITECTURE /// LLM BENCHMARKING /// CLOUD ORCHESTRATION /// </span>
+                <span>/// AI/ML SYSTEMS /// BACKEND ARCHITECTURE /// LLM BENCHMARKING /// CLOUD ORCHESTRATION /// </span>
+                <span>/// AI/ML SYSTEMS /// BACKEND ARCHITECTURE /// LLM BENCHMARKING /// CLOUD ORCHESTRATION /// </span>
+                <span>/// AI/ML SYSTEMS /// BACKEND ARCHITECTURE /// LLM BENCHMARKING /// CLOUD ORCHESTRATION /// </span>
             </div>
         </section>
     );

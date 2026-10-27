@@ -34,6 +34,13 @@
     color: var(--foreground);
 }
 
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
 .year {
     display: inline-block;
     font-size: 0.9rem;
@@ -44,9 +51,19 @@
     background: var(--accent);
     border: 2px solid black;
     box-shadow: 3px 3px 0px 0px black;
-    margin-top: 0.5rem;
 }
 
+.cgpaBadge {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: white;
+    font-family: var(--font-geist-mono);
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    background: black;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px 0px black;
+}
 .school {
     font-size: 1.1rem;
     font-family: var(--font-geist-mono);
@@ -54,6 +71,24 @@
     font-weight: 500;
     margin: 0;
     margin-top: 1rem;
+}
+
+.details {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed black;
+    font-family: var(--font-geist-mono);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.details p {
+    margin: 0.5rem 0;
+}
+
+.label {
+    font-weight: 700;
+    color: var(--accent);
 }
 
 @media (max-width: 768px) {

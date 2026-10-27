@@ -8,17 +8,16 @@ export default function About() {
                 <div className={styles.content}>
                     <div className={styles.text}>
                         <p>
-                            I am a pre-final year Computer Science and Engineering student at Vellore Institute of Technology, Chennai.
-                            My technical journey is driven by a passion for building scalable backend systems and exploring the potential of Artificial Intelligence.
+                            I am a Computer Science & Engineering undergraduate at Vellore Institute of Technology (VIT), Chennai (Class of 2027 | CGPA: 8.22 / 10.0), actively seeking a six-month software / AI engineering internship starting January 2027.
                         </p>
                         <p>
-                            Currently serving as a Tech Team Member at ACM-VIT Chennai, I have hands-on experience in delivering REST APIs,
-                            optimizing deployment workflows, and leading agile engineering teams. I thrive in environments that challenge
-                            me to optimize latency, ensure reliability, and design intuitive developer experiences.
+                            As a Software Engineering Intern at CGI, I designed and deployed a Python automation platform on the Jira REST API that slashed timesheet collection effort by 80% and engineered an SLA escalation engine for 500+ active tickets that cut breaches by 60%.
                         </p>
                         <p>
-                            When I'm not coding hackathon-winning projects or engineering deepfake detectors, I'm mentoring peers
-                            in API design and Git workflows.
+                            In open-source ML research, I build and benchmark systems under tight real-world constraints: profiling Qwen3 LLM inference and GRPO reasoning RL across 448 attention heads on consumer GPUs (<a href="https://github.com/skrisps26/powerbench" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>PowerBench</a>), developing sub-millisecond cluster-routed semantic caches (<a href="https://github.com/skrisps26/nexus" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>NEXUS</a>), and training compressed language models under 16MB for OpenAI's Parameter Golf challenge.
+                        </p>
+                        <p>
+                            My focus is high-agency engineering: bridging robust backend architecture (FastAPI, Docker, OOP design), modern AI/RL pipelines (PyTorch, LangGraph), and reliable cloud orchestration (AWS Lambda, Bedrock, Step Functions).
                         </p>
                     </div>
                 </div>

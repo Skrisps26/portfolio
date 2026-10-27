@@ -1,11 +1,11 @@
 import styles from './Skills.module.css';
 
 const skills = {
-    "Languages": ["JavaScript", "Python", "C", "C++", "Golang", "SQL"],
-    "Frameworks": ["React", "Node.js", "Express", "Django", "FastAPI"],
-    "Databases": ["MongoDB", "MySQL", "PostgreSQL"],
-    "AI/ML": ["PyTorch", "NumPy", "Pandas", "OpenCV"],
-    "DevOps/MLOps": ["Git", "Docker", "Linux", "MLflow", "DVC", "AWS", "Azure"]
+    "AI/ML & Systems": ["PyTorch", "CUDA", "GRPO RL", "QLoRA", "Transformers", "TFLite", "Ollama", "LangGraph", "HNSW", "SimHash", "OpenCV"],
+    "Backend & APIs": ["Python", "FastAPI", "Django", "Node.js", "Express", "REST API Design", "Jira REST API", "Pytest", "Jest"],
+    "Cloud & DevOps": ["AWS Lambda", "Amazon Bedrock", "AWS Step Functions", "AWS S3 / DynamoDB", "Docker", "LocalStack", "GitHub Actions", "Linux"],
+    "Databases & Storage": ["PostgreSQL", "MongoDB", "MySQL", "DynamoDB", "ChromaDB", "FalkorDB", "Supabase"],
+    "Languages": ["Python", "JavaScript", "TypeScript", "C", "C++", "SQL", "Bash", "Golang"]
 };
 
 export default function Skills() {

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sai Krishna | Computer Science Engineer",
-  description: "Portfolio of Sai Krishna, a creative Computer Science student & Developer.",
+  title: "Sai Krishna | Software & AI Systems Engineer",
+  description: "Portfolio of Sai Krishna — CS undergraduate at VIT Chennai building reliable AI and backend systems. Experienced in LLM inference, PyTorch, distributed systems, and cloud orchestration.",
 };
 
 export default function RootLayout({
